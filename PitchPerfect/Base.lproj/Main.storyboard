@@ -90,14 +90,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2nu-1W-bUK">
+                            <stackView opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2nu-1W-bUK">
                                 <rect key="frame" x="125" y="281" width="180" height="270"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-p5-ETf" userLabel="Row1 View">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-p5-ETf" userLabel="Row1 View">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2R-2r-bjh" userLabel="Slow Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="X2R-2r-bjh" secondAttribute="height" multiplier="1:1" id="Z0O-Fl-Lwc"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="Slow"/>
                                                 <connections>
@@ -106,6 +109,9 @@
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypb-Sv-qNG" userLabel="Fast Button">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ypb-Sv-qNG" secondAttribute="height" multiplier="1:1" id="gpQ-N8-e21"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="" image="Fast">
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
@@ -116,11 +122,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xMu-bg-sBc" userLabel="Row2 View">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xMu-bg-sBc" userLabel="Row2 View">
                                         <rect key="frame" x="0.0" y="90" width="180" height="90"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF2-L6-v1A" userLabel="High Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AF2-L6-v1A" secondAttribute="height" multiplier="1:1" id="PoJ-Hm-zeZ"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="HighPitch"/>
                                                 <connections>
@@ -129,6 +138,9 @@
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bep-3t-WPN" userLabel="Low Button">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bep-3t-WPN" secondAttribute="height" multiplier="1:1" id="PNo-kG-SjS"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="LowPitch"/>
                                                 <connections>
@@ -137,11 +149,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AXW-TL-4Rt" userLabel="Row3 View">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="1" verticalCompressionResistancePriority="1000" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AXW-TL-4Rt" userLabel="Row3 View">
                                         <rect key="frame" x="0.0" y="180" width="180" height="90"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49D-aa-pbH" userLabel="Echo Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="49D-aa-pbH" secondAttribute="height" multiplier="1:1" id="k5o-EK-xy1"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="Echo"/>
                                                 <connections>
@@ -150,6 +165,9 @@
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8c-hw-m3n" userLabel="Reverb Button">
                                                 <rect key="frame" x="90" y="0.0" width="90" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="q8c-hw-m3n" secondAttribute="height" multiplier="1:1" id="Z1u-am-KHV"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="Reverb"/>
                                                 <connections>
@@ -163,8 +181,7 @@
                             <button opaque="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-60-Udr" userLabel="Stop Button">
                                 <rect key="frame" x="183" y="559" width="64" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="61n-Lw-rY1"/>
-                                    <constraint firstAttribute="width" constant="64" id="Trr-7W-zhu"/>
+                                    <constraint firstAttribute="width" secondItem="ce5-60-Udr" secondAttribute="height" multiplier="1:1" id="Vmy-pi-IWY"/>
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Stop"/>
@@ -178,9 +195,10 @@
                         <constraints>
                             <constraint firstItem="2nu-1W-bUK" firstAttribute="centerX" secondItem="bQb-06-tEt" secondAttribute="centerX" id="Cbp-aW-DaP"/>
                             <constraint firstItem="2nu-1W-bUK" firstAttribute="centerX" secondItem="ce5-60-Udr" secondAttribute="centerX" id="PRf-cp-UYM"/>
-                            <constraint firstItem="bLb-rJ-X1t" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ce5-60-Udr" secondAttribute="bottom" constant="12" id="PhM-z1-uoB"/>
-                            <constraint firstItem="2nu-1W-bUK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bQb-06-tEt" secondAttribute="top" constant="20" id="Xhh-Dq-o12"/>
-                            <constraint firstItem="2nu-1W-bUK" firstAttribute="centerY" secondItem="bQb-06-tEt" secondAttribute="centerY" constant="-50" id="r5M-Ml-Vdl"/>
+                            <constraint firstItem="bLb-rJ-X1t" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ce5-60-Udr" secondAttribute="bottom" constant="12" id="PhM-z1-uoB" userLabel="bottom = Stop Button.bottom + 12"/>
+                            <constraint firstItem="2nu-1W-bUK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bQb-06-tEt" secondAttribute="top" constant="20" id="Xhh-Dq-o12" userLabel="Stack View.top = top + 20"/>
+                            <constraint firstItem="q8c-hw-m3n" firstAttribute="width" secondItem="ce5-60-Udr" secondAttribute="width" multiplier="1.40625" id="aKv-1c-EeL"/>
+                            <constraint firstItem="2nu-1W-bUK" firstAttribute="centerY" secondItem="bQb-06-tEt" secondAttribute="centerY" constant="-50" id="r5M-Ml-Vdl" userLabel="Stack View.centerY = centerY"/>
                             <constraint firstItem="ce5-60-Udr" firstAttribute="top" secondItem="2nu-1W-bUK" secondAttribute="bottom" constant="8" id="wZe-6r-brc"/>
                         </constraints>
                     </view>
